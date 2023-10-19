@@ -1,0 +1,44 @@
+@use '../abstracts/variables' as v;
+
+.main-footer {
+    background-color: v.$secondary_light;
+    border-top: v.$standard solid v.$primary;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    .top-left {
+        height: 100%;
+        background-color: v.$light;
+        position: absolute;
+    }
+    .container {
+        border: initial;
+        background-color: initial;
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            margin: v.$thick 0;
+            .col {
+                width: 33%;
+                .menu {
+                    border-left: 1px solid v.$dark;
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+        .footer-logo {
+            width: 230px;
+
+        }
+        .secondary-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: v.$thick 0;
+        }
+    }
+}
+

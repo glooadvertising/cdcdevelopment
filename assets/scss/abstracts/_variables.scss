@@ -1,0 +1,23 @@
+// COLOURS
+@use '../util/fonts';
+
+$primary: #D0383B;
+$secondary: #939290;
+$secondary_light: #F6F6F6;
+$light: #ffffff;
+$dark: #000000;
+
+// FONTS
+$display: 'Barlow', sans-serif;
+$body: 'Barlow', sans-serif;
+$special: 'Barlow Semi Condensed', sans-serif;
+
+
+// SIZES
+$page_width: 1280px;
+$ultra_thin: 0.25rem;
+$thin: 0.5rem;
+$standard: 1rem;
+$medium: 2rem;
+$thick: 3rem;
+$ultra_thick: 4rem;

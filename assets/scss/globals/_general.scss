@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as v;
+
+
+a {
+    color: inherit;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.container {
+    all: inherit;
+    width:  v.$page_width;
+    margin: 0 auto;
+    padding: 0 v.$medium;
+}

@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as *;
+
+.framed-photo {
+    background-color: $secondary;
+    display: flex;
+    aspect-ratio: 9/6;
+    margin: $medium 0 0 $medium;
+    box-shadow: -($medium) (-$medium) $dark;
+    width: 100%;
+    position: sticky;
+    top: $medium;
+}

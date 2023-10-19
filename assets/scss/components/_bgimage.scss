@@ -1,0 +1,20 @@
+@use '../abstracts/variables' as v;
+
+.bgimage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .container {
+        background-image: none;
+        padding-top: v.$ultra_thick;
+        padding-bottom: v.$ultra_thick;
+        .translucid-block {
+            background-color: v.$light;
+            opacity: 0.90;
+            padding: v.$ultra_thick (v.$ultra_thick * 2);
+            * {
+                opacity: 1;
+            }
+        }
+    }
+}
