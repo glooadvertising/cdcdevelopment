@@ -1,11 +1,55 @@
 @use '../abstracts/variables' as v;
 
+.hero {
+
+    .container-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-top: v.$medium;
+        padding-bottom: v.$medium;
+        .bottom-right {
+            position: absolute;
+            height: 100%;
+            background-color: v.$secondary_light;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    h1, h2 {
+        margin-bottom: 0;
+        max-width: 60%;
+        text-transform: uppercase;
+    }
+    h2 {
+        color: v.$primary;
+        text-transform: uppercase;
+    }
+
+}
+
 .home-hero {
     display: flex;
     height: 50vh;
     width: 100%;
     background-color: v.$primary;
-    clip-path: polygon(calc((100% - v.$page_width) / 2) 100%, 0 50%, 0 0, 100% 0, 100% 100%);
+    // clip-path: polygon(calc((100% - v.$page_width) / 2) 100%, 0 50%, 0 0, 100% 0, 100% 100%);
+    clip-path: polygon(100% 0, 100% 100%, 25vh 100%, 0 50%, 0 0);
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+}
+
+.page-hero {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    background-color: v.$primary;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 25vh 100%);
     img {
         width: 100%;
         height: 100%;

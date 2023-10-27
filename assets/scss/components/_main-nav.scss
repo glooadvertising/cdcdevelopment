@@ -1,14 +1,32 @@
 @use '../abstracts/variables' as *;
 
-.menu {
-    ul {
-        display: flex;
-        margin-left: 2rem;
-        text-transform: uppercase;
-        li {
-            margin: $thin $medium;
-            list-style: none;
+.main-header {
+    .menu-main-menu-container {
+        .menu {
+            display: flex;
+            margin-left: 2rem;
+            text-transform: uppercase;
+            li {
+                margin: $medium $standard $thin $standard;
+                list-style: none;
+                position: relative;
+                &:hover, &.current_page_item {
+                    transition: 1s ease-in-out all;
+                    a {
+                        color: $primary;
+                        font-weight: 600;
+                    }
+                    &:after {
+                        content: '';
+                        display: flex;
+                        width: 100%;
+                        height: $ultra_thin;
+                        background-color: $primary;
+                        position: absolute;
+                        bottom: -(calc($thin * 1.5));
+                    }
+                }
+            }
         }
     }
-
 }

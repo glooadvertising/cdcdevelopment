@@ -1,0 +1,48 @@
+@use '../abstracts/variables' as v;
+.features {
+    display: flex;
+    gap: v.$thick;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-top: v.$ultra_thick;
+    padding-bottom: v.$ultra_thick;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: v.$light;
+        opacity: 0.75;
+        z-index: 0;
+        top:0;
+        left: 0;
+    }
+    .container {
+        z-index: 1;
+        background-image: none;
+        .feature-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: v.$thin;
+            background-color: v.$secondary_light;
+            width: 33%;
+            padding: v.$medium v.$medium v.$thick v.$medium;
+            h3 {
+                color: v.$primary;
+                font-weight: 600;
+            }
+            p {
+                color: v.$dark;
+            }
+            img {
+                aspect-ratio: 1;
+                object-fit: contain;
+                margin: 0 auto;
+                width: calc(v.$ultra_thick * 1.5);
+            }
+        }
+    }
+
+    }

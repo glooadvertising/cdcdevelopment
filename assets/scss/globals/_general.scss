@@ -1,6 +1,5 @@
 @use '../abstracts/variables' as v;
 
-
 a {
     color: inherit;
 }
@@ -12,6 +11,35 @@ h1 {
 .container {
     all: inherit;
     width:  v.$page_width;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 v.$medium;
+}
+
+.highlighted {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.grey-block {
+    background-color: v.$secondary_light;
+    padding-top: v.$ultra_thick;
+    padding-bottom: v.$ultra_thick;
+}
+
+.centered {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.two-videos {
+    padding-bottom: v.$ultra_thick;
+    display: flex;
+    gap: v.$medium;
+    video {
+        display: flex;
+        width: 50%;
+    }
 }

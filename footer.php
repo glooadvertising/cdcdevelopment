@@ -4,7 +4,7 @@
             <div class="main-content">
                 <div class="col">
                     <a href="<?php echo site_url( ); ?>">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/images/CDC_Development_LOGO.jpg" alt="" class="footer-logo">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/images/CDC_Development_LOGO.png" alt="" class="footer-logo">
                     </a>
                 </div>
                 <div class="col">

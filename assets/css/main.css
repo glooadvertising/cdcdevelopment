@@ -46,8 +46,61 @@ h1 {
 .container {
   all: inherit;
   width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+.highlighted {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.grey-block {
+  background-color: #F6F6F6;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.centered {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.two-videos {
+  padding-bottom: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+.two-videos video {
+  display: flex;
+  width: 50%;
+}
+
+.hero .container-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.hero .container-wrapper .bottom-right {
+  position: absolute;
+  height: 100%;
+  background-color: #F6F6F6;
+  right: 0;
+  bottom: 0;
+}
+.hero h1, .hero h2 {
+  margin-bottom: 0;
+  max-width: 60%;
+  text-transform: uppercase;
+}
+.hero h2 {
+  color: #D0383B;
+  text-transform: uppercase;
 }
 
 .home-hero {
@@ -55,8 +108,8 @@ h1 {
   height: 50vh;
   width: 100%;
   background-color: #D0383B;
-  -webkit-clip-path: polygon(calc((100% - 1280px) / 2) 100%, 0 50%, 0 0, 100% 0, 100% 100%);
-          clip-path: polygon(calc((100% - 1280px) / 2) 100%, 0 50%, 0 0, 100% 0, 100% 100%);
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 25vh 100%, 0 50%, 0 0);
+          clip-path: polygon(100% 0, 100% 100%, 25vh 100%, 0 50%, 0 0);
 }
 .home-hero img {
   width: 100%;
@@ -67,14 +120,48 @@ h1 {
      object-position: top;
 }
 
-.menu ul {
+.page-hero {
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  background-color: #D0383B;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 25vh 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 25vh 100%);
+}
+.page-hero img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.main-header .menu-main-menu-container .menu {
   display: flex;
   margin-left: 2rem;
   text-transform: uppercase;
 }
-.menu ul li {
-  margin: 0.5rem 2rem;
+.main-header .menu-main-menu-container .menu li {
+  margin: 2rem 1rem 0.5rem 1rem;
   list-style: none;
+  position: relative;
+}
+.main-header .menu-main-menu-container .menu li:hover, .main-header .menu-main-menu-container .menu li.current_page_item {
+  transition: 1s ease-in-out all;
+}
+.main-header .menu-main-menu-container .menu li:hover a, .main-header .menu-main-menu-container .menu li.current_page_item a {
+  color: #D0383B;
+  font-weight: 600;
+}
+.main-header .menu-main-menu-container .menu li:hover:after, .main-header .menu-main-menu-container .menu li.current_page_item:after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 0.25rem;
+  background-color: #D0383B;
+  position: absolute;
+  bottom: -0.75rem;
 }
 
 .main-header {
@@ -124,11 +211,41 @@ h1 {
   bottom: 0;
   right: 0;
   width: 33%;
+  z-index: 1;
+  opacity: 0.5;
 }
 .half .container {
   margin-top: 4rem;
 }
 .half .col-left, .half .col-right {
+  width: 50%;
+}
+
+.third {
+  color: #000000;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 4rem;
+}
+.third .top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33%;
+}
+.third .bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 33%;
+}
+.third .container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.third .col-left, .third .col-right {
   width: 50%;
 }
 
@@ -191,8 +308,8 @@ h1 {
 }
 .bgimage .container {
   background-image: none;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .bgimage .container .translucid-block {
   background-color: #ffffff;
@@ -201,4 +318,132 @@ h1 {
 }
 .bgimage .container .translucid-block * {
   opacity: 1;
+}
+
+.grid {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid .service-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.grid .service-card img {
+  max-width: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 3rem 100%, 0 calc(100% - 3rem));
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 3rem 100%, 0 calc(100% - 3rem));
+  aspect-ratio: 9/6;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid .service-card .card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #F6F6F6;
+  padding: 2rem;
+}
+
+.tabs {
+  padding-bottom: 4rem;
+}
+.tabs .container .tabs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.tabs .container .tabs-wrapper .tabs-content {
+  display: flex;
+  flex-direction: column;
+}
+.tabs .container .tabs-wrapper .tabs-content .tab {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.tabs .container .tabs-wrapper .tabs-content .tab img {
+  width: 100%;
+  aspect-ratio: 9/6;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.tabs .container .tabs-wrapper .tabs-content .tab .caption {
+  padding: 2rem;
+  padding-right: 50%;
+  background-color: #F6F6F6;
+}
+.tabs .container .tabs-wrapper .buttons {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  list-style: none;
+}
+.tabs .container .tabs-wrapper .buttons li {
+  padding: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: default;
+}
+.tabs .container .tabs-wrapper .buttons .active {
+  background-color: #D0383B;
+  color: #ffffff;
+}
+.tabs .container .tabs-wrapper .buttons .inactive {
+  background-color: #F6F6F6;
+}
+
+.features {
+  display: flex;
+  gap: 3rem;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.features:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.75;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+.features .container {
+  z-index: 1;
+  background-image: none;
+}
+.features .container .feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background-color: #F6F6F6;
+  width: 33%;
+  padding: 2rem 2rem 3rem 2rem;
+}
+.features .container .feature-card h3 {
+  color: #D0383B;
+  font-weight: 600;
+}
+.features .container .feature-card p {
+  color: #000000;
+}
+.features .container .feature-card img {
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto;
+  width: 6rem;
 }/*# sourceMappingURL=main.css.map */

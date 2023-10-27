@@ -1,0 +1,58 @@
+@use '../abstracts/variables' as v;
+.tabs {
+    padding-bottom: v.$ultra_thick;
+    .container {
+        .tabs-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: v.$thin;
+            .tabs-content{
+                display: flex;
+                flex-direction: column;
+                .tab {
+                    display: flex;
+                    flex-direction: column;
+                    gap: v.$thin;
+                    img {
+                        width: 100%;
+                        aspect-ratio: 9/6;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                    .caption {
+                        padding: v.$medium;
+                        padding-right: 50%;
+                        background-color: v.$secondary_light;
+                    }
+                }
+            }
+            .buttons {
+                padding-inline-start: 0;
+                margin-block-start: 0;
+                margin-block-end: 0;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: v.$thin;
+                list-style: none;
+                li {
+                    padding: v.$medium;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    cursor:default;
+                }
+                .active {
+                    background-color: v.$primary;
+                    color: v.$light;
+                }
+                .inactive {
+                    background-color: v.$secondary_light;
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+
