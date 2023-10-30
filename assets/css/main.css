@@ -116,8 +116,8 @@ h1 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .page-hero {
@@ -366,7 +366,7 @@ h1 {
 }
 .tabs .container .tabs-wrapper .tabs-content .tab img {
   width: 100%;
-  aspect-ratio: 9/6;
+  aspect-ratio: 9/3;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;

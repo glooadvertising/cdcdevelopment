@@ -1,7 +1,7 @@
 <?php $query_args = array(
     'posts_per_page' => 10,
     'post_status' => 'publish',
-    'post_type' => 'service',
+    'post_type' => 'project',
     'order' => 'ASC'
 );?>
 

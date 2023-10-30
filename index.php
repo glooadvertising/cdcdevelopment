@@ -35,8 +35,12 @@
     </section>
 <?php }?>
 
-<?php if(is_page( 'projects' )) {?>
+<?php if(is_page( 'featured-projects' )) {?>
     <?php get_template_part( 'partials/tabs' );?>
+<?php } ?>
+
+<?php if(is_page( 'all-projects' )) {?>
+    <?php get_template_part( 'partials/filtered-grid' );?>
 <?php } ?>
 
 <?php if(is_page( 'about' )) { ?>
