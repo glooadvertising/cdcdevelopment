@@ -5,8 +5,8 @@
     'order' => 'ASC'
 );?>
 
-<div class="grid">
-<?php $query = new WP_Query($query_args); ?>
+<div class="filtered-grid">
+    <?php $query = new WP_Query($query_args); ?>
     <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
         <div class="service-card">
         <img src="<?php the_post_thumbnail_url( );?>" alt="">

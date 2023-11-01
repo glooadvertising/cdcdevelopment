@@ -42,7 +42,26 @@
                 margin: 0 auto;
                 width: calc(v.$ultra_thick * 1.5);
             }
+            div {
+                @media screen and (max-width: 850px) {
+                    flex-grow: 1;
+                }
+            }
+            @media screen and (max-width: 850px) {
+                width: 100%;
+                flex-direction: row-reverse;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: v.$medium;
+            }
+            @media screen and (max-width: 550px) {
+                flex-direction: column;
+            }
+        
         }
+    }
+    @media screen and (max-width: 850px) {
+        flex-direction: column;
     }
 
     }

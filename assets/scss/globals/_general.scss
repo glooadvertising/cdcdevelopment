@@ -38,8 +38,21 @@ h1 {
     padding-bottom: v.$ultra_thick;
     display: flex;
     gap: v.$medium;
-    video {
-        display: flex;
-        width: 50%;
+    .container {
+        .videos-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 100%;
+            gap: v.$medium;
+            video {
+                display: flex;
+                width: 100%;
+            }
+            @media screen and (max-width: 690px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        
+        }
+    
     }
 }

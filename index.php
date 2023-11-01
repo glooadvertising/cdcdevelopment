@@ -18,7 +18,9 @@
                 <?php the_content();?>
             </div>
             <div class="col-right">
-                <div class="framed-photo"></div>
+                <div class="framed-photo">
+                    <?php get_template_part( 'partials/slideshow' );?>
+                </div>
             </div>
         </div>
     </section>
@@ -53,14 +55,16 @@
     </section>
     <section class="two-videos">
         <div class="container">
-            <video controls>
-                <source src="https://cdcdevelopment.com.au/wp-content/uploads/2018/06/Vet-Pathways-Video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <video controls>
-                <source src="https://cdcdevelopment.com.au/wp-content/uploads/2018/05/movie-2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="videos-wrapper">
+                <video controls>
+                    <source src="https://cdcdevelopment.com.au/wp-content/uploads/2018/06/Vet-Pathways-Video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="https://cdcdevelopment.com.au/wp-content/uploads/2018/05/movie-2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
     </section>
 <?php }?>

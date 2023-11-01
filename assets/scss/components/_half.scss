@@ -28,4 +28,12 @@
     .col-left, .col-right {
         width: 50%
     }
+    @media screen and (max-width: 1050px) {
+        flex-direction: column-reverse;
+        .col-left, .col-right {
+            width: 100%
+        }
+    
+    }
+
 }

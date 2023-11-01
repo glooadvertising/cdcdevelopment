@@ -18,16 +18,60 @@
             display: flex;
             flex-direction: row;
             margin: v.$thick 0;
+            gap: v.$medium;
+            @media screen and (max-width: 850px) {
+                flex-direction: column;
+                margin-bottom: 0;
+            }
+            .col-1 {
+                @media screen and (max-width: 850px) {
+                    order: 1;
+                }
+            }        
+            .col-2 {
+                @media screen and (max-width: 850px) {
+                    order: 3;
+                }
+            }        
+            .col-3 {
+                @media screen and (max-width: 850px) {
+                    order: 2;
+                }
+            }        
             .col {
                 width: 33%;
-                .menu {
-                    border-left: 1px solid v.$dark;
+                .menu-main-menu-container {
                     ul {
-                        display: flex;
-                        flex-direction: column;
+                        list-style: none;
+                        li {
+                            font-size: 0.8rem;
+                            text-transform: uppercase;
+                            letter-spacing: 0.15rem;
+                            margin-bottom: v.$ultra_thin;
+                            color: v.$dark;
+                        }
                     }
                 }
+                .menu {
+                    border-left: 1px solid v.$dark;
+                    display: flex;
+                    flex-direction: column;
+                    @media screen and (max-width: 850px) {
+                        border-top: 1px solid v.$dark;
+                        border-left: none;
+                        padding-inline-start: 0;
+                        padding-top: v.$thick;
+                    }
+
+                }
+                @media screen and (max-width: 850px) {
+                    width: 100%;
+                }
             }
+            &.col:last-child {
+                order: 2;
+            }
+
         }
         .footer-logo {
             width: 230px;
@@ -38,6 +82,11 @@
             align-items: center;
             justify-content: center;
             margin: v.$thick 0;
+            @media screen and (max-width: 850px) {
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin-top: 0;
+            }
         }
     }
 }

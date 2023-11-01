@@ -2,6 +2,10 @@
 
 .main-header {
     .menu-main-menu-container {
+        @media screen and (max-width: 850px) {
+            display: none;
+        }
+    
         .menu {
             display: flex;
             margin-left: 2rem;

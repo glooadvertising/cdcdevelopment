@@ -2,18 +2,20 @@
         <div class="top-left"></div>
         <div class="container">
             <div class="main-content">
-                <div class="col">
+                <div class="col col-1">
                     <a href="<?php echo site_url( ); ?>">
                         <img src="<?php echo get_template_directory_uri();?>/assets/images/CDC_Development_LOGO.png" alt="" class="footer-logo">
                     </a>
                 </div>
-                <div class="col">
-                    <h5>CONTACT US:</h5>
-                    <p><strong>Phone:</strong> <a href="tel:0362738100" target="_blank">(03) 6273 8100</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:admin@cdcdevelopment.com.au" target="_blank">admin@cdcdevelopment.com.au</a></p>
+                <div class="col col-2">
+                    <p>
+                        CONTACT US:<br>
+                        Phone: <a href="tel:0362738100" target="_blank">(03) 6273 8100</a><br>
+                        Email: <a href="mailto:admin@cdcdevelopment.com.au" target="_blank">admin@cdcdevelopment.com.au</a>
+                    </p>
                      
                 </div>
-                <div class="col">
+                <div class="col col-3">
                     <?php wp_nav_menu( );?>
                 </div>
             </div>
