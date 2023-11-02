@@ -56,3 +56,17 @@ h1 {
     
     }
 }
+
+.btn {
+    color: v.$primary;
+    padding: v.$standard v.$medium;
+    border: v.$ultra_thin solid;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out;
+    &:hover {
+        color: v.$light;
+        background-color: v.$primary;
+        border-color: v.$primary;
+    }
+}

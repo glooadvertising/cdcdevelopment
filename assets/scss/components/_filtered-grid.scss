@@ -1,0 +1,51 @@
+@use '../abstracts/variables' as v;
+
+.filtered-grid {
+    gap: v.$standard;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr );
+    .service-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        img {
+            max-width: 100%;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, v.$thick 100%, 0 calc(100% - v.$thick));
+            aspect-ratio: 9/6;
+            object-fit: cover;
+
+
+        }
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+            background-color: v.$secondary_light;
+            padding: v.$medium;
+            .btn {
+                font-size: 0.6rem;
+                text-align: center;
+                margin-left: auto;
+                padding: v.$ultra_thin v.$standard;
+                border: 2px solid;
+                letter-spacing: 0.1rem;
+            }
+        }
+    }
+    @media screen and (max-width: 950px) {
+        grid-template-columns:repeat(3, 1fr );
+
+    }
+    @media screen and (max-width: 790px) {
+        grid-template-columns:repeat(2, 1fr );
+
+    }
+    @media screen and (max-width: 480px) {
+        grid-template-columns:repeat(1, 1fr );
+
+    }
+
+
+}

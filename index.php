@@ -42,7 +42,11 @@
 <?php } ?>
 
 <?php if(is_page( 'all-projects' )) {?>
-    <?php get_template_part( 'partials/filtered-grid' );?>
+    <section>
+        <div class="container">
+            <?php get_template_part( 'partials/filtered-grid' );?>  
+        </div>
+    </section>
 <?php } ?>
 
 <?php if(is_page( 'about' )) { ?>

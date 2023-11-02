@@ -5,7 +5,6 @@
     'order' => 'ASC'
 );?>
 
-
 <section class="tabs">
     <div class="container">
         <div class="tabs-wrapper" x-data="{
@@ -14,6 +13,7 @@
             inactive: 'inactive'}
             ">
             <div class="tabs-content">
+                <a href="<?php the_permalink();?>all-projects" class="btn btn-see-all">See all projects</a>
                 <?php $query = new WP_Query( $query_args ); ?>
                 <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
                 <div class="tab" x-show="tab === <?php echo get_post_field('menu_order', $post->ID);?>">
@@ -21,6 +21,7 @@
                     <div class="caption">
                         <?php the_excerpt(); ?>
                     </div>
+                    
                 </div>
                 <?php endwhile; 
                     wp_reset_postdata();

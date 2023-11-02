@@ -18,6 +18,10 @@
                         aspect-ratio: 9/3;
                         object-fit: cover;
                         object-position: center;
+                        @media screen and (max-width: 850px) {
+                            aspect-ratio: 9/6;
+                        }
+        
                     }
                     .caption {
                         padding: v.$medium;
@@ -47,9 +51,17 @@
                 .inactive {
                     background-color: v.$secondary_light;
                 }
+                @media screen and (max-width: 850px) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
                 
             }
         }
+    }
+
+    .btn-see-all {
+        margin-left: auto;
+        margin-bottom: v.$standard;
     }
 }
 
