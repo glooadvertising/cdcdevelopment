@@ -234,6 +234,7 @@ h1 {
   display: flex;
   position: relative;
   gap: 4rem;
+  justify-content: center;
 }
 .half .top-left {
   position: absolute;
