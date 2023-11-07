@@ -14,7 +14,7 @@
             <!-- Display the Title as a link to the Post's permalink. -->
             <div class="card-content">
                 <h4><?php the_title(); ?></h4>
-                <a href="<?php get_permalink();?>" class="btn">See details</a>
+                <a href="<?php echo get_permalink();?>" class="btn">See details</a>
             </div>
             </div>
 
