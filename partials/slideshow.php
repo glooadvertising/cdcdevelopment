@@ -4,6 +4,11 @@
         ?>
         <li>
             <img src="<?php echo the_sub_field('slide'); ?>" alt="">
+            <?php if( get_sub_field('slide_caption') ): ?>
+            <div class="slide-caption">
+                <?php echo the_sub_field('slide_caption');?>
+            </div>
+            <?php endif; ?>
         </li>
     <?php endwhile; ?>
     </ul>

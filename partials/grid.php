@@ -8,7 +8,7 @@
 <div class="grid">
 <?php $query = new WP_Query($query_args); ?>
     <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-        <div class="service-card">
+        <div class="service-card" data-aos="flip-left" data-aos-delay="300">
         <img src="<?php the_post_thumbnail_url( );?>" alt="">
 
         <!-- Display the Title as a link to the Post's permalink. -->

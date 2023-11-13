@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as v;
+
 .gallery-slideshow {
     position: relative;
     list-style: none;
@@ -10,6 +12,17 @@
     > img {
         margin: 0; 
         padding: 0;
+    }
+
+    .slide-caption {
+        font-size: 0.8rem;
+        text-align: center;
+        color: #ffffff;
+        position: absolute;
+        background-color: v.$primary;
+        display: flex;
+        padding: v.$thin v.$standard;
+        width: 100%;
     }
 
 }

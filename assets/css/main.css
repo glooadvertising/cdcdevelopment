@@ -163,8 +163,8 @@ h1 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  -o-object-position: center;
+     object-position: center;
 }
 
 @media screen and (max-width: 850px) {
@@ -668,6 +668,16 @@ h1 {
   margin: 0;
   padding: 0;
 }
+.gallery-slideshow .slide-caption {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  background-color: #D0383B;
+  display: flex;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
 
 .gallery-slideshow li img {
   position: absolute;
@@ -785,4 +795,34 @@ h1 {
 
 .gallery-navbar li:active, .gallery-control:active {
   transform: scale(0.8);
+}
+
+.contact-section {
+  display: flex;
+  background-color: #F6F6F6;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.contact-section .fluentform {
+  width: 100%;
+}
+.contact-section label {
+  color: #D0383B;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.125rem;
+}
+.contact-section input.ff-el-form-control,
+.contact-section textarea.ff-el-form-control {
+  background-color: transparent;
+  border-radius: 0;
+  border: 2px solid #D0383B;
+}
+.contact-section input.ff-el-form-control::-moz-placeholder, .contact-section textarea.ff-el-form-control::-moz-placeholder {
+  color: transparent;
+}
+.contact-section input.ff-el-form-control::placeholder,
+.contact-section textarea.ff-el-form-control::placeholder {
+  color: transparent;
 }/*# sourceMappingURL=main.css.map */

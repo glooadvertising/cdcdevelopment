@@ -8,10 +8,10 @@
     ?>
 </section>
 
-<?php if(is_page(['home', 'about'])){?>
+<?php if(is_page(['home', 'about', 'housing'])){?>
     <section class="half">
-        <div class="top-left"></div>
-        <div class="bottom-right"></div>
+        <div class="top-left" data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-offset="300" data-aos-easing="ease-in-sine"></div>
+        <div class="bottom-right" data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-offset="300" data-aos-easing="ease-in-sine"></div>
         <div class="container">
             <div class="col-left">
                 <div class="highlighted"><?php if(has_excerpt( )){the_excerpt();}?></div>
@@ -28,7 +28,7 @@
 
 <?php if(is_page( 'services' )) {?>
     <section class="third">
-        <div class="top-left"></div>
+        <div class="top-left" data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-offset="300" data-aos-easing="ease-in-sine"></div>
 
         <div class="container">
             <div><?php the_content( );?></div>
@@ -50,7 +50,7 @@
 <?php } ?>
 
 <?php if(is_page( 'about' )) { ?>
-    <section class="grey-block">
+    <section class="grey-block" data-aos="fade-left">
         <div class="container">
             <p>
             From Management through to apprentices, CDC delivers timely and quality work throughout Southern Tasmania. The same quality and efficiency is provided by CDC to the local home owners’ market and private construction industry. We have undertaken and been successfully awarded Federal, State and Local Government projects.
@@ -60,11 +60,11 @@
     <section class="two-videos">
         <div class="container">
             <div class="videos-wrapper">
-                <video controls>
+                <video data-aos="zoom-in" controls>
                     <source src="https://cdcdevelopment.com.au/wp-content/uploads/2018/06/Vet-Pathways-Video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <video controls>
+                <video data-aos="zoom-in" data-aos-delay="300" controls>
                     <source src="https://cdcdevelopment.com.au/wp-content/uploads/2018/05/movie-2.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -74,9 +74,9 @@
 <?php }?>
 
 <?php if(is_page('home')) {?>
-    <section class="bgimage" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/image6.jpg');">
+    <section class="bgimage" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/image6.jpg');" data-aos="fade">
         <div class="container">
-            <div class="translucid-block">
+            <div class="translucid-block" data-aos="flip-left" data-aos-delay="300">
                 <p>
                     From the smallest maintenance jobs to large private and government construction work, we will ensure quality work and an attention to detail and to your needs.
                 </p>
@@ -105,5 +105,6 @@
 <?php if(is_page('services')) {?>
     <?php get_template_part( 'partials/features' );?>
 <?php }?>
-    
+
+<?php get_template_part( 'partials/contact' );?>    
 <?php get_footer();?>

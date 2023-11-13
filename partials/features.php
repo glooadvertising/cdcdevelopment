@@ -1,7 +1,7 @@
-<section class="features" style="background-image:url(<?php echo get_template_directory_uri();?>/assets/images/image6.jpg);">
+<section class="features" style="background-image:url(<?php echo get_template_directory_uri();?>/assets/images/image6.jpg);" data-aos="fade">
     <div class="container">
         <!-- NEW CARD -->
-    <div class="feature-card">
+    <div class="feature-card" data-aos="flip-left" data-aos-delay="300">
             <div>
                 <h3>Assurance from Us</h3>
                 <p>
@@ -12,7 +12,7 @@
             <img src="<?php echo get_template_directory_uri();?>/assets/images/thumb.png" alt="">
         </div>
         <!-- NEW CARD -->
-        <div class="feature-card">
+        <div class="feature-card" data-aos="flip-left" data-aos-delay="600">
             <div>
                 <h3>Ownership</h3>
                 <p>A Tasmanian Operated Company, Tasmanian Owned, Independently Operated, Independently Owned</p>
@@ -20,7 +20,7 @@
             <img src="<?php echo get_template_directory_uri();?>/assets/images/document.png" alt="">
         </div>
         <!-- NEW CARD -->
-        <div class="feature-card">
+        <div class="feature-card" data-aos="flip-left" data-aos-delay="900">
             <div>
                 <h3>Our Brand Promises</h3>
                 <p>One point of contact for all your needs</p>

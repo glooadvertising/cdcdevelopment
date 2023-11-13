@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as v;
+
+.contact-section {
+    display: flex;
+    background-color: v.$secondary_light;
+    padding-top: v.$ultra_thick;
+    padding-bottom: v.$ultra_thick;
+
+    .fluentform {
+        width: 100%;
+    }
+
+    label {
+        color: v.$primary;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 0.8rem;
+        letter-spacing: 0.125rem;
+    }
+
+    input.ff-el-form-control, 
+    textarea.ff-el-form-control {
+        background-color: transparent;
+        border-radius: 0;
+        border: 2px solid v.$primary;
+        &::placeholder {
+            color: transparent;
+        }
+    }
+
+}

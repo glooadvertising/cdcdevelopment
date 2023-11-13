@@ -1,4 +1,4 @@
-    <footer class="main-footer">
+    <footer class="main-footer" data-aos="fade-up">
         <div class="top-left"></div>
         <div class="container">
             <div class="main-content">
