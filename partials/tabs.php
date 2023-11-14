@@ -20,6 +20,8 @@
                     <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
                     <div class="caption">
                         <?php the_excerpt(); ?>
+                        <a href="<?php echo get_the_permalink( );?>" class="btn">see more</a>
+
                     </div>
                     
                 </div>

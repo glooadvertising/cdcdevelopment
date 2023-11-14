@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as v;
+
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -8,4 +10,119 @@
             max-width: 100%;
         }
     }
+    @media screen and (max-width: 850px) {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 }
+
+.nav-menu-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.burger {
+    display: none;
+    @media screen and (max-width: 850px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: v.$medium;
+        height: v.$medium;
+        transition: 0.3s ease-out all;
+        .patty {
+            height: 1px;
+            background-color: v.$primary;
+        }
+    
+    
+    }
+
+}
+
+.cross {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: v.$medium;
+    height: v.$medium;
+    transition: 0.3s ease-out all;
+    .patty {
+        height: 1px;
+        background-color: v.$primary;
+    }
+    .patty:first-child {
+        transform: rotate(45deg);
+    }
+    .patty:nth-child(2n) {
+        display: none;
+    }
+    .patty:last-child {
+        transform: rotate(-45deg);
+    }
+}
+
+.offset-menu-container {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+
+    .offset-menu-container {
+        transition: 0.5s ease-in-out left;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: -100%;
+        bottom: 0;
+        max-width: 100%;
+        height: 100vh;
+        background-color: v.$primary;
+        color: v.$secondary_light;
+        padding: v.$thick calc(v.$standard + v.$thin) v.$thick calc(v.$ultra_thick + v.$thick);
+        a:hover {
+            color: v.$light;
+        }
+        box-shadow: 0 0 20px 5px v.$secondary;
+        .menu-main-menu-container {
+            text-transform: uppercase;
+            ul {
+                padding-inline-start: 0;
+                list-style-type: none;
+                li {
+                    border-bottom: v.$ultra_thin solid transparent;
+                    text-align: right;
+                    font-weight: 600;
+                    transition: 0.3s ease-in-out all;
+    
+                    &:hover {
+                        border-bottom: v.$ultra_thin solid v.$light;
+                    }
+                    a {
+                        display: inline-block;
+                        padding: v.$standard 0;
+                        
+                    }
+                }
+    
+            }
+        }
+    }
+
+    .pull-in {
+        left: 0;
+    }
+
+    
+}
+
+
+
+
+    
+
+

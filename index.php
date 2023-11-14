@@ -14,8 +14,10 @@
         <div class="bottom-right" data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-offset="300" data-aos-easing="ease-in-sine"></div>
         <div class="container">
             <div class="col-left">
-                <div class="highlighted"><?php if(has_excerpt( )){the_excerpt();}?></div>
-                <?php the_content();?>
+                <span>
+                    <div class="highlighted"><?php if(has_excerpt( )){the_excerpt();}?></div>
+                    <?php the_content();?>
+                </span>
             </div>
             <div class="col-right">
                 <div class="framed-photo">

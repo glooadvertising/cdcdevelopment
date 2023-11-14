@@ -9,6 +9,7 @@
     position: relative;
     gap: v.$ultra_thick;
     justify-content: center;
+    overflow: hidden;
     .top-left {
         position: absolute;
         top: 0;
@@ -27,12 +28,19 @@
         margin-top: v.$ultra_thick;
     }
     .col-left, .col-right {
-        width: 50%
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+        gap: v.$thick
     }
     @media screen and (max-width: 1050px) {
         flex-direction: column-reverse;
         .col-left, .col-right {
             width: 100%
+        }
+        .col-left {
+            padding-bottom: v.$ultra_thick;
         }
     
     }

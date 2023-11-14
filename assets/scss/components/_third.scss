@@ -8,6 +8,7 @@
     flex-direction: column;
     position: relative;
     gap: v.$ultra_thick;
+    overflow: hidden;
     .top-left {
         position: absolute;
         top: 0;

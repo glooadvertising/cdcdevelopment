@@ -1,4 +1,4 @@
-    <footer class="main-footer" data-aos="fade-up">
+    <footer class="main-footer">
         <div class="top-left"></div>
         <div class="container">
             <div class="main-content">
@@ -6,6 +6,14 @@
                     <a href="<?php echo site_url( ); ?>">
                         <img src="<?php echo get_template_directory_uri();?>/assets/images/CDC_Development_LOGO.png" alt="" class="footer-logo">
                     </a>
+                    <span class="social-media-block">
+                        <a href="http://www.instagram.com/cdcdevelopmentptyltd/" target="_blank">
+                            <img src="<?php echo get_template_directory_uri();?>/assets/images/instagram_logo_icon.svg" alt="Instagram" class="footer-media-icon">
+                        </a>
+                        <a href="https://www.facebook.com/pg/CDCDevelopment22" target="_blank">
+                            <img src="<?php echo get_template_directory_uri();?>/assets/images/facebook_logo_icon.svg" alt="Facebook" class="footer-media-icon">
+                        </a>
+                    </span>
                 </div>
                 <div class="col col-2">
                     <p>

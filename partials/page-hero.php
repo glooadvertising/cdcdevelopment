@@ -3,7 +3,7 @@
     $alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
 ?>
 
-<?php if(!is_page('featured-projects')) {?>
+<?php if(!is_page(['featured-projects', 'all-projects'])) {?>
 <div class="page-hero" data-aos="fade-up" data-aos-anchor-placement="center-center">
     <?php if(has_post_thumbnail( )){?>
         <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php if( $alt ): echo $alt; endif; ?>">

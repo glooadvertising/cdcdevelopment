@@ -24,9 +24,30 @@
         
                     }
                     .caption {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-end;
+                        justify-content: space-between;
                         padding: v.$medium;
-                        padding-right: 50%;
                         background-color: v.$secondary_light;
+                        p {
+                            max-width: 50%;
+                        }
+                        .btn {
+                            font-size: 0.6rem;
+                            text-align: center;
+                            margin-left: auto;
+                            padding: v.$ultra_thin v.$standard;
+                            border: 2px solid;
+                            letter-spacing: 0.1rem;
+                        }
+                        @media screen and (max-width: 580px) {
+                            flex-direction: column;
+                            p {
+                                max-width: 100%;
+                                margin-bottom: v.$thick;
+                            }
+                        }
                     }
                 }
             }

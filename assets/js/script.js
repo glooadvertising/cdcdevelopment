@@ -4,17 +4,23 @@ AOS.init();
 
 jQuery(document).ready(function($) {
     $(function() {
-        $('.gallery-slideshow').slideshow({
-          interval: 5000,
-        //   width: 600,
-        //   height: 450
-        });
+      $('.gallery-slideshow').slideshow({
+        interval: 5000,
+      //   width: 600,
+      //   height: 450
       });
+    });
 
-      $("#contact").hide();
-      $(".show-form a").click(function(){
-        $("#contact").show();
-      });
-  
+    $("#contact").hide();
+    $(".show-form a").click(function(){
+      $("#contact").show();
+    });  
+
+    $("#menu-button").click(function() {
+      $('#menu-button').toggleClass("cross")
+      $('#offset').toggleClass("pull-in")
+    });
 
   })
+
+

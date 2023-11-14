@@ -8,8 +8,11 @@
     <div class="bottom-right"></div>
     <div class="container">
         <div class="col-left">
-            <div class="highlighted"><?php if(has_excerpt( )){the_excerpt();}?></div>
-            <?php the_content();?>
+            <span>
+                <div class="highlighted"><?php if(has_excerpt( )){the_excerpt();}?></div>
+                <?php the_content();?>
+            </span>
+            <a href="<?php get_site_url(); ?>/all-projects" class="btn">see more projects</a>
         </div>
         <div class="col-right">
             <div class="framed-photo">
