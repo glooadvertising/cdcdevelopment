@@ -9,7 +9,7 @@
     <?php } ?>
 </div>
 <div class="container-wrapper" data-aos="fade">
-    <div class="bottom-right" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"></div>
+    <div class="bottom-right" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"></div>
     <div class="container">
         <h1><?php bloginfo('title');?></h1>
         <h2><?php bloginfo('description')?></h2>

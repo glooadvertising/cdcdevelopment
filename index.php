@@ -10,8 +10,8 @@
 
 <?php if(is_page(['home', 'about', 'housing'])){?>
     <section class="half">
-        <div class="top-left" data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-offset="300" data-aos-easing="ease-in-sine"></div>
-        <div class="bottom-right" data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-offset="300" data-aos-easing="ease-in-sine"></div>
+        <div class="top-left" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-offset="300" data-aos-easing="ease-in-sine"></div>
+        <div class="bottom-right" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-offset="300" data-aos-easing="ease-in-sine"></div>
         <div class="container">
             <div class="col-left">
                 <span>
@@ -30,7 +30,7 @@
 
 <?php if(is_page( 'services' )) {?>
     <section class="third">
-        <div class="top-left" data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-offset="300" data-aos-easing="ease-in-sine"></div>
+        <div class="top-left" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-offset="300" data-aos-easing="ease-in-sine"></div>
 
         <div class="container">
             <div><?php the_content( );?></div>
@@ -52,7 +52,7 @@
 <?php } ?>
 
 <?php if(is_page( 'about' )) { ?>
-    <section class="grey-block" data-aos="fade-left">
+    <section class="grey-block" data-aos="fade-up">
         <div class="container">
             <p>
             From Management through to apprentices, CDC delivers timely and quality work throughout Southern Tasmania. The same quality and efficiency is provided by CDC to the local home owners’ market and private construction industry. We have undertaken and been successfully awarded Federal, State and Local Government projects.

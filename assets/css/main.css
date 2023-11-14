@@ -39,10 +39,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 a {
   color: inherit;
 }
@@ -68,7 +64,6 @@ h1 {
   background-color: #F6F6F6;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  overflow: hidden;
 }
 
 .centered {
