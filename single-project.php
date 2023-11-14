@@ -12,7 +12,7 @@
                 <div class="highlighted"><?php if(has_excerpt( )){the_excerpt();}?></div>
                 <?php the_content();?>
             </span>
-            <a href="<?php get_home_url(); ?>/all-projects" class="btn">see more projects</a>
+            <a href="<?php echo site_url( );?>/all-projects" class="btn">see more projects</a>
         </div>
         <div class="col-right">
             <div class="framed-photo">
