@@ -369,15 +369,18 @@ h1 {
   width: 50%;
   gap: 3rem;
 }
+.half .col-left {
+  padding-bottom: 4rem;
+}
+.half .col-left span {
+  max-width: 100%;
+}
 @media screen and (max-width: 1050px) {
   .half {
     flex-direction: column-reverse;
   }
   .half .col-left, .half .col-right {
     width: 100%;
-  }
-  .half .col-left {
-    padding-bottom: 4rem;
   }
 }
 
@@ -552,6 +555,11 @@ h1 {
 @media screen and (max-width: 1050px) {
   .bgimage .container .translucid-block {
     padding: 4rem;
+  }
+}
+@media screen and (max-width: 580px) {
+  .bgimage .container .translucid-block {
+    padding: 3rem;
   }
 }
 

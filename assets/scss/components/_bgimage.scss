@@ -18,6 +18,9 @@
             @media screen and (max-width: 1050px) {
                 padding: v.$ultra_thick;
             }
+            @media screen and (max-width: 580px) {
+                padding: v.$thick;
+            }
         }
     }
 

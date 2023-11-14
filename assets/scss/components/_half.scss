@@ -36,13 +36,16 @@
         width: 50%;
         gap: v.$thick
     }
+    .col-left {
+        padding-bottom: v.$ultra_thick;
+        span {
+            max-width: 100%;
+        }
+    }
     @media screen and (max-width: 1050px) {
         flex-direction: column-reverse;
         .col-left, .col-right {
             width: 100%
-        }
-        .col-left {
-            padding-bottom: v.$ultra_thick;
         }
     
     }
