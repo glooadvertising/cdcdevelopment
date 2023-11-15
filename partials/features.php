@@ -23,10 +23,11 @@
         <div class="feature-card" data-aos="flip-left" data-aos-delay="900">
             <div>
                 <h3>Our Brand Promises</h3>
-                <p>One point of contact for all your needs</p>
-                <p>On time every time</p>
-                <p>Minimal disruption to your people and business</p>
-                </p>
+                <ul>
+                    <li>One point of contact for all your needs</li>
+                    <li>On time every time</li>
+                    <li>Minimal disruption to your people and business</li>
+                </ul>
             </div>
             <img src="<?php echo get_template_directory_uri();?>/assets/images/tick.png" alt="">
         </div>

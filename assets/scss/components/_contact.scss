@@ -11,7 +11,7 @@
     }
 
     label {
-        color: v.$primary;
+        color: v.$secondary;
         text-transform: uppercase;
         font-weight: 400;
         font-size: 0.8rem;
@@ -22,7 +22,7 @@
     textarea.ff-el-form-control {
         background-color: transparent;
         border-radius: 0;
-        border: 2px solid v.$primary;
+        border: 2px solid v.$secondary;
         &::placeholder {
             color: transparent;
         }

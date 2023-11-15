@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Barlow", sans-serif;
-  color: #939290;
+  color: #000000;
 }
 
 h1, h2, h3, h4, h5 {
@@ -208,9 +208,11 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .main-header .main-logo {
-  width: 124px;
+  width: 250px;
 }
 .main-header .main-logo img {
   max-width: 100%;
@@ -477,6 +479,9 @@ h1 {
   .main-footer .container .main-content .col-2 {
     order: 3;
   }
+}
+.main-footer .container .main-content .col-3 .menu {
+  margin-top: 0;
 }
 @media screen and (max-width: 850px) {
   .main-footer .container .main-content .col-3 {
@@ -971,7 +976,7 @@ h1 {
   width: 100%;
 }
 .contact-section label {
-  color: #D0383B;
+  color: #939290;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 0.8rem;
@@ -981,7 +986,7 @@ h1 {
 .contact-section textarea.ff-el-form-control {
   background-color: transparent;
   border-radius: 0;
-  border: 2px solid #D0383B;
+  border: 2px solid #939290;
 }
 .contact-section input.ff-el-form-control::-moz-placeholder, .contact-section textarea.ff-el-form-control::-moz-placeholder {
   color: transparent;

@@ -4,8 +4,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: v.$thin;
+    padding-bottom: v.$thin;
     .main-logo {
-        width: 124px;
+        width: 250px;
         img {
             max-width: 100%;
         }
