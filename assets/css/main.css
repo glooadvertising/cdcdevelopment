@@ -416,11 +416,11 @@ h1 {
 }
 
 .framed-photo {
-  background-color: #939290;
+  background-color: #F6F6F6;
   display: flex;
   aspect-ratio: 9/6;
   margin: 2rem 0 0 2rem;
-  box-shadow: -2rem -2rem #000000;
+  box-shadow: -2rem -2rem #939290;
   width: 100%;
   position: sticky;
   top: 2rem;

@@ -7,10 +7,10 @@
                         <img src="<?php echo get_template_directory_uri();?>/assets/images/CDC_Development_LOGO.png" alt="" class="footer-logo">
                     </a>
                     <span class="social-media-block">
-                        <a href="http://www.instagram.com/cdcdevelopmentptyltd/" target="_blank">
+                        <a href="http://www.instagram.com/cdcdevelopmentptyltd/" target="_blank" rel="noopener noreferrer">
                             <img src="<?php echo get_template_directory_uri();?>/assets/images/instagram_logo_icon.svg" alt="Instagram" class="footer-media-icon">
                         </a>
-                        <a href="https://www.facebook.com/pg/CDCDevelopment22" target="_blank">
+                        <a href="https://www.facebook.com/pg/CDCDevelopment22" target="_blank" rel="noopener noreferrer">
                             <img src="<?php echo get_template_directory_uri();?>/assets/images/facebook_logo_icon.svg" alt="Facebook" class="footer-media-icon">
                         </a>
                     </span>
@@ -33,7 +33,7 @@
                         &#169; <?php echo date('Y'); ?> <?php bloginfo('title');?>
                     </span> / 
                     <span>
-                        Site by <a href="https://glooadvertising.com.au" target="_blank">Gloo</a>
+                        Site by <a href="https://glooadvertising.com.au" target="_blank" rel="noopener noreferrer">Gloo</a>
                     </span>
                 </p>
             </div>

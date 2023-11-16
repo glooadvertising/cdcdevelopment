@@ -43,13 +43,16 @@
     <?php get_template_part( 'partials/tabs' );?>
 <?php } ?>
 
-<?php if(is_page( 'all-projects' )) {?>
-    <section>
+<?php if(is_page( 'projects' )) {?>
+    <section class="third">
+        <div class="top-left" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-offset="300" data-aos-easing="ease-in-sine"></div>
+
         <div class="container">
-            <?php get_template_part( 'partials/filtered-grid' );?>  
+            <div><?php the_content( );?></div>
+            <?php get_template_part( 'partials/filtered-grid' );?>
         </div>
     </section>
-<?php } ?>
+<?php }?>
 
 <?php if(is_page( 'about' )) { ?>
     <section class="grey-block" data-aos="fade-up">
