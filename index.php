@@ -85,10 +85,8 @@
                 <p>
                     From the smallest maintenance jobs to large private and government construction work, we will ensure quality work and an attention to detail and to your needs.
                 </p>
+                <p>Our products and services include:</p>
                 <ul>
-                    <strong>
-                        Our products and services include:
-                    </strong>
                     <li>Commercial work, particularly government and private schools, aged care facilities, hospitals and various store fronts</li>
                     <li>Domestic housing, decks and renovations</li>
                     <li>Heritage work, renovations and restoration</li>
