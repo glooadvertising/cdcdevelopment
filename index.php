@@ -81,7 +81,7 @@
 <?php if(is_page('home')) {?>
     <section class="bgimage" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/image6.jpg');" data-aos="fade">
         <div class="container">
-            <div class="translucid-block" data-aos="flip-left" data-aos-delay="300">
+            <div class="translucid-block">
                 <p>
                     From the smallest maintenance jobs to large private and government construction work, we will ensure quality work and an attention to detail and to your needs.
                 </p>

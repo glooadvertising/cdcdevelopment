@@ -982,6 +982,9 @@ h1 {
   font-size: 0.8rem;
   letter-spacing: 0.125rem;
 }
+.contact-section label::after {
+  color: #939290 !important;
+}
 .contact-section input.ff-el-form-control,
 .contact-section textarea.ff-el-form-control {
   background-color: transparent;

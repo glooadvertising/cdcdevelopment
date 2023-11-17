@@ -16,6 +16,9 @@
         font-weight: 400;
         font-size: 0.8rem;
         letter-spacing: 0.125rem;
+        &::after {
+            color: v.$secondary !important;
+        }
     }
 
     input.ff-el-form-control, 
