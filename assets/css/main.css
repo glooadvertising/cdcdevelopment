@@ -190,11 +190,15 @@ h1 {
 }
 .main-header .menu-main-menu-container .menu > li > a {
   margin: 2rem 0 0.5rem 0;
-  color: #D0383B;
-  font-weight: 600;
+  color: #000000;
 }
 .main-header .menu-main-menu-container .menu > li:hover, .main-header .menu-main-menu-container .menu > li.current_page_item {
   transition: 1s ease-in-out all;
+}
+.main-header .menu-main-menu-container .menu > li:hover > a, .main-header .menu-main-menu-container .menu > li.current_page_item > a {
+  color: #D0383B;
+  font-weight: 600;
+  z-index: 100;
 }
 .main-header .menu-main-menu-container .menu > li:hover:after, .main-header .menu-main-menu-container .menu > li.current_page_item:after {
   content: "";
@@ -210,16 +214,18 @@ h1 {
 }
 .main-header .menu-main-menu-container .menu > li ul {
   display: none;
-  background-color: #D0383B;
   position: absolute;
   z-index: 100;
-  top: 2rem;
+  padding-top: 32px;
+  margin-top: -28px;
   padding-inline-start: 0;
   width: auto;
   min-width: 200px;
   transition: 0.3s ease-out all;
 }
 .main-header .menu-main-menu-container .menu > li ul > li {
+  background-color: #D0383B;
+  list-style-type: none;
   margin: 0;
   padding: 1rem;
   cursor: pointer;

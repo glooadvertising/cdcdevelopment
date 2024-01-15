@@ -17,12 +17,16 @@
                 display: block;
                 > a {
                     margin: $medium 0 $thin 0;
-                    color: $primary;
-                    font-weight: 600;
+                    color: $dark;
                 }
                 
                 &:hover, &.current_page_item {
                     transition: 1s ease-in-out all;
+                    > a {
+                        color: $primary;
+                        font-weight: 600;
+                        z-index: 100;
+                    }
                     &:after {
                         content: '';
                         display: flex;
@@ -40,15 +44,17 @@
                 }
                 ul {
                     display: none;
-                    background-color: $primary;
                     position: absolute;
                     z-index: 100;
-                    top: 2rem;
+                    padding-top: 32px;
+                    margin-top: -28px;
                     padding-inline-start: 0;
                     width: auto;
                     min-width: 200px;
                     transition: 0.3s ease-out all;
                     > li {
+                        background-color: $primary;
+                        list-style-type: none;
                         margin: 0;
                         padding: 1rem;
                         cursor: pointer;
