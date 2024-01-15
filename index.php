@@ -78,6 +78,14 @@
     </section>
 <?php }?>
 
+<?php if(is_page( 'our-promises' )) { ?>
+    <section class="grey-block" data-aos="fade-up">
+        <div class="container">
+            <?php the_content( ); ?>
+        </div>
+    </section>
+<?php }?>
+
 <?php if(is_page('home')) {?>
     <section class="bgimage" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/image6.jpg');" data-aos="fade">
         <div class="container">
