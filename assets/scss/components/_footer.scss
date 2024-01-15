@@ -67,6 +67,9 @@
                             letter-spacing: 0.15rem;
                             margin-bottom: v.$ultra_thin;
                             color: v.$dark;
+                            ul {
+                                display: none;
+                            }
                         }
                     }
                 }

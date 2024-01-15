@@ -95,20 +95,29 @@
             ul {
                 padding-inline-start: 0;
                 list-style-type: none;
-                li {
+                > li {
                     border-bottom: v.$ultra_thin solid transparent;
                     text-align: right;
                     font-weight: 600;
                     transition: 0.3s ease-in-out all;
-    
-                    &:hover {
-                        border-bottom: v.$ultra_thin solid v.$light;
+
+                    &:nth-of-type(2) {
+                        .sub-menu {
+                            li:first-child{
+                                display: none;
+                            }
+                        }
                     }
-                    a {
+    
+                    > a {
                         display: inline-block;
                         padding: v.$standard 0;
+                        &:hover {
+                            border-bottom: v.$ultra_thin solid v.$light;
+                        }
                         
                     }
+
                 }
     
             }
