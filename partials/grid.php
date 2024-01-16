@@ -2,6 +2,7 @@
     'posts_per_page' => -1,
     'post_status' => 'publish',
     'post_type' => 'service',
+    'orderby' => 'date',
     'order' => 'DESC'
 );?>
 
