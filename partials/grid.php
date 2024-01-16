@@ -2,7 +2,7 @@
     'posts_per_page' => -1,
     'post_status' => 'publish',
     'post_type' => 'service',
-    'order' => 'ASC'
+    'order' => 'DESC'
 );?>
 
 <div class="grid">
